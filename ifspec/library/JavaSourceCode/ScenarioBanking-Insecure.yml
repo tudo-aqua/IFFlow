@@ -1,0 +1,11 @@
+format_version: "2.0"
+input_files:
+  - ../../verifier-stub/src/main/java
+  - ScenarioBanking-Insecure/program/
+properties:
+  - property_file: taint.prp
+    expected_verdict: false
+
+options:
+  language: Java
+  main-method: ScenarioBanking-Insecure/program/Main.java

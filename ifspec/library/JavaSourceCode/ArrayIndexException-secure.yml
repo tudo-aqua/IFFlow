@@ -1,0 +1,11 @@
+format_version: "2.0"
+input_files:
+  - ../../verifier-stub/src/main/java
+  - ArrayIndexException-secure/program/
+properties:
+  - property_file: taint.prp
+    expected_verdict: true
+
+options:
+  language: Java
+  main-method: ArrayIndexException-secure/program/Main.java
